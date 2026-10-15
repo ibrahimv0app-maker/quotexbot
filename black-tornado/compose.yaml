@@ -1,0 +1,27 @@
+services:
+  postgres:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: qbot
+      POSTGRES_PASSWORD: local_test_only
+      POSTGRES_DB: qbot
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U qbot"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+  bot:
+    build: .
+    environment:
+      DATABASE_URL: postgresql+asyncpg://qbot:local_test_only@postgres/qbot
+      DRY_RUN: "true"
+      PORT: "8000"
+    ports: ['8000:8000']
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+volumes:
+  pgdata:

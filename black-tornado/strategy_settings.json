@@ -1,0 +1,229 @@
+{
+  "BT01": {
+    "min_direction": 18,
+    "min_pressure": 25,
+    "max_turbulence": 70,
+    "max_extension": 3,
+    "min_confidence": 50,
+    "ignition_direction": 35.0,
+    "ignition_pressure": 40.0
+  },
+  "BT02": {
+    "min_direction": 18,
+    "min_pressure": 25,
+    "max_turbulence": 70,
+    "max_extension": 3,
+    "min_confidence": 50,
+    "sustained_direction": 40.0,
+    "trend_pressure": 45.0
+  },
+  "BT03": {
+    "min_direction": 18,
+    "min_pressure": 25,
+    "max_turbulence": 70,
+    "max_extension": 3,
+    "min_confidence": 50,
+    "pullback_distance": 1.0,
+    "recovery": 4.0
+  },
+  "BT04": {
+    "min_direction": 18,
+    "min_pressure": 25,
+    "max_turbulence": 70,
+    "max_extension": 3,
+    "min_confidence": 50,
+    "pressure_recovery": 5.0
+  },
+  "BT05": {
+    "min_direction": 18,
+    "min_pressure": 25,
+    "max_turbulence": 70,
+    "max_extension": 3,
+    "min_confidence": 50,
+    "direction_acceleration": 12.0
+  },
+  "BT06": {
+    "min_direction": 18,
+    "min_pressure": 25,
+    "max_turbulence": 70,
+    "max_extension": 3,
+    "min_confidence": 50,
+    "min_break_distance": 0.1,
+    "break_direction": 35.0,
+    "break_body": 0.5
+  },
+  "BT07": {
+    "min_direction": 18,
+    "min_pressure": 25,
+    "max_turbulence": 70,
+    "max_extension": 3,
+    "min_confidence": 50,
+    "max_retest_age": 5.0,
+    "retest_recovery": 4.0
+  },
+  "BT08": {
+    "min_direction": 18,
+    "min_pressure": 25,
+    "max_turbulence": 70,
+    "max_extension": 3,
+    "min_confidence": 50,
+    "release_pressure": 45.0,
+    "release_range": 1.0
+  },
+  "BT09": {
+    "min_direction": 18,
+    "min_pressure": 25,
+    "max_turbulence": 70,
+    "max_extension": 3,
+    "min_confidence": 50,
+    "quiet_range": 1.0,
+    "impulse_min": 1.2,
+    "impulse_max": 2.2,
+    "impulse_body": 0.65
+  },
+  "BT10": {
+    "min_direction": 18,
+    "min_pressure": 25,
+    "max_turbulence": 70,
+    "max_extension": 3,
+    "min_confidence": 50,
+    "alignment_body": 0.45
+  },
+  "BT11": {
+    "min_direction": 18,
+    "min_pressure": 25,
+    "max_turbulence": 70,
+    "max_extension": 3,
+    "min_confidence": 50,
+    "reclaim_pressure": 25.0
+  },
+  "BT12": {
+    "min_direction": 18,
+    "min_pressure": 25,
+    "max_turbulence": 70,
+    "max_extension": 3,
+    "min_confidence": 50,
+    "trap_shift": 12.0
+  },
+  "BT13": {
+    "min_direction": 18,
+    "min_pressure": 25,
+    "max_turbulence": 70,
+    "max_extension": 3,
+    "min_confidence": 50,
+    "structural_wick": 0.4,
+    "rejection_pressure": 25.0
+  },
+  "BT14": {
+    "min_direction": 18,
+    "min_pressure": 25,
+    "max_turbulence": 70,
+    "max_extension": 3,
+    "min_confidence": 50,
+    "divergence_exhaustion": 50.0,
+    "divergence_shift": 8.0
+  },
+  "BT15": {
+    "min_direction": 18,
+    "min_pressure": 25,
+    "max_turbulence": 70,
+    "max_extension": 3,
+    "min_confidence": 50,
+    "snapback_displacement": 2.0,
+    "snapback_exhaustion": 65.0,
+    "snapback_shift": 5.0
+  },
+  "BT16": {
+    "min_direction": 18,
+    "min_pressure": 25,
+    "max_turbulence": 70,
+    "max_extension": 3,
+    "min_confidence": 50,
+    "floor_location": 0.2,
+    "floor_recovery": 5.0
+  },
+  "BT17": {
+    "min_direction": 18,
+    "min_pressure": 25,
+    "max_turbulence": 70,
+    "max_extension": 3,
+    "min_confidence": 50,
+    "ceiling_location": 0.8,
+    "ceiling_recovery": 5.0
+  },
+  "BT18": {
+    "min_direction": 18,
+    "min_pressure": 25,
+    "max_turbulence": 70,
+    "max_extension": 3,
+    "min_confidence": 50,
+    "return_displacement": 1.5,
+    "return_shift": 5.0
+  },
+  "BT19": {
+    "min_direction": 18,
+    "min_pressure": 25,
+    "max_turbulence": 70,
+    "max_extension": 3,
+    "min_confidence": 50,
+    "double_pressure": 30.0,
+    "double_shift": 5.0
+  },
+  "BT20": {
+    "min_direction": 18,
+    "min_pressure": 25,
+    "max_turbulence": 70,
+    "max_extension": 3,
+    "min_confidence": 50,
+    "prior_continuation": 30.0,
+    "flip_pressure": 30.0,
+    "flip_shift": 15.0
+  },
+  "BT21": {
+    "min_direction": 18,
+    "min_pressure": 25,
+    "max_turbulence": 70,
+    "max_extension": 3,
+    "min_confidence": 50,
+    "cooldown_age": 6.0,
+    "cooldown_drop": 15.0,
+    "cooldown_pressure": 45.0
+  },
+  "BT22": {
+    "min_direction": 18,
+    "min_pressure": 25,
+    "max_turbulence": 70,
+    "max_extension": 3,
+    "min_confidence": 50,
+    "spike_reversal_age": 5.0,
+    "spike_exhaustion": 65.0,
+    "spike_shift": 8.0
+  },
+  "BT23": {
+    "min_direction": 18,
+    "min_pressure": 25,
+    "max_turbulence": 70,
+    "max_extension": 3,
+    "min_confidence": 50,
+    "sequence_pressure": 60.0
+  },
+  "BT24": {
+    "min_direction": 18,
+    "min_pressure": 25,
+    "max_turbulence": 70,
+    "max_extension": 3,
+    "min_confidence": 50,
+    "transition_pressure_drop": 15.0,
+    "range_transition_shift": 5.0
+  },
+  "BT25": {
+    "min_direction": 18,
+    "min_pressure": 25,
+    "max_turbulence": 70,
+    "max_extension": 3,
+    "min_confidence": 50,
+    "range_observations": 2.0,
+    "transition_expansion": 1.1,
+    "transition_pressure": 50.0
+  }
+}

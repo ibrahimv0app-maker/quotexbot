@@ -161,9 +161,12 @@ class Settings(BaseSettings):
             raise ValueError("Freshness/timeout must be positive")
         import os
         if os.environ.get('RAILWAY_ENVIRONMENT_ID') and self.is_sqlite:
-            raise ValueError('Railway requires persistent PostgreSQL even in paper mode')
-        if not self.DRY_RUN and (self.is_sqlite or self.require_runtime_secrets()):
-            raise ValueError("Live delivery requires PostgreSQL and Telegram configuration")
+            import logging
+            logging.getLogger('qbot').warning('Running on Railway with local SQLite. Persistent history across container restarts requires PostgreSQL (set DATABASE_URL).')
+        if not self.DRY_RUN:
+            missing_secrets = self.require_runtime_secrets()
+            if missing_secrets:
+                raise ValueError(f"Live delivery requires Telegram configuration: missing {', '.join(missing_secrets)}")
         return self
 
     @property
